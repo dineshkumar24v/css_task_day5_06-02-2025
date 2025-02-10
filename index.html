@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .nav-div{
+    padding: 15px;
+    width: 100%;
+    height: 9vh;
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  .nav-span{
+    position: absolute;
+    right: 6px;
+    top: 1px;
+  }
+  .nav-span a{
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+    color: black;   
+  }
+  /* herosection */
+  .hero-div img{
+    width: 100%;
+  }
+  .hero-div{
+    position: relative;
+    margin-bottom: 6%;
+  }
+  .hero-p{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 40px;
+    color: white;
+  }
+  .hero-div p b{
+    background-color: rgb(79, 79, 79);
+    padding: 5%;
+    margin-right: 10px;
+  }
+  /* <!-- projects section ----------> */
+  #h1p{
+    margin-bottom: 2%;
+    font-weight: 300;
+    margin-left: 2%;
+  }
+  .proj-main-container{
+    margin: 20px;
+    margin-top: 3%;
+    margin-bottom: 6%;
+  }
+
+  .proj-main-container .projects-div{
+    display: inline-block;
+    margin: 4px;
+  }
+  .projects-div img{
+    height: 190px;
+    width: 290px;
+  }
+  .projects-div{
+    position: relative;
+    /* height: fit-content; */
+  }
+  .projects-div p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    padding: 10px;
+    color: white;
+  }
+  /* about section******** */
+  
+  .about-sec-div{
+    margin: 2%;
+  }
+  .about-sec-div div{
+    width: 24%;
+    display: inline-block;
+    margin: 0.1em;
+  }
+  .about-sec-div img, h2{
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  .about-sec-div p, button{
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+  .about-sec-div button{
+    height: 40px;
+    font-weight: 600;
+    border: none;
+    font-size: 18px;
+  }
+  button:hover{
+    background-color: rgb(177, 175, 175);
+    cursor: pointer;
+  }
+
+  /* contact section */
+  .contact-div h3, span, hr{
+    margin: 2%;
+  }
+  .contact-div button{
+    padding: 1%;
+    width: fit-content;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    margin: 2%;
+  }
+  .contact-div input{
+    display: flex;
+    margin: 2%;
+    width: 95%;
+    height: 40px;
+    padding: 1%;
+    font-size: 18px;
+}
+
+/* footer section******* */
+img{
+  width: 95%;
+}
+
+footer{
+  padding: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+</style>
+<body>
+  <!-- navbar----------- -->
+   <div class="nav-div">
+     <nav> <!---nav is a block level element-->
+       <a href="#"><b>B R</b> Architects</a>
+     </nav>
+      <span class="nav-span">
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+        <a href="#">B R Contact</a>
+      </span>
+    </div>
+  <!-- herosection--------->
+   <div class="hero-div">
+     <img src="images/architect.jpg" alt="image">
+     <p class="hero-p"><b>BR</b>Architects</p>
+   </div>
+   <!-- projects section ---------->
+    <h1 id="h1p">Projects</h1>
+    <hr>
+
+    <div class="proj-main-container">
+      <div class="projects-div">
+        <img src="images/house1.jpg" alt="image">
+        <p>Summer House</p>
+      </div>
+      <div class="projects-div">
+        <img src="images/house2.jpg" alt="image">
+        <p>Brick House</p>
+      </div>
+      <div class="projects-div">
+        <img src="images/house3.jpg" alt="image">
+        <p>Renovated</p>
+      </div>
+      <div class="projects-div">
+        <img src="images/house4.jpg" alt="image">
+        <p>Barn House</p>
+      </div>
+      <div class="projects-div">
+        <img src="images/house5.jpg" alt="image">
+        <p>Summer House</p>
+      </div>
+      <div class="projects-div">
+        <img src="images/house6.jpg" alt="image">
+        <p>Brick House</p>
+      </div>
+      <div class="projects-div">
+        <img src="images/house7.jpg" alt="image">
+        <p>Renovated</p>
+      </div>
+      <div class="projects-div">
+        <img src="images/house8.jpg" alt="image">
+        <p>Barn House</p>
+      </div>
+    </div>
+    <!-- about section -->
+    <div class="about-sec-div">
+     <h1>About</h1>
+     <hr>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus incidunt tenetur mollitia cumque dolorum, eaque doloribus, esse cupiditate repudiandae dolor vero tempore adipisci nisi consectetur delectus saepe a reprehenderit temporibus?
+     Excepturi dignissimos pariatur eum harum vel voluptatem optio numquam, architecto sequi at quaerat incidunt maiores eaque, error exercitationem. Quo, voluptates? Hic cupiditate amet corrupti vel quo nihil quod odio voluptatum!
+     Illum voluptates quas ut ad. A excepturi aperiam eum debitis, voluptates quas quos mollitia illum adipisci consequuntur totam unde nobis iste illo dolor aspernatur eius alias tempore libero voluptatibus vero.</p>
+     <div>
+        <img src="images/John.jpg" alt="image">
+        <h2>John Doe</h2>
+        <h5>CEO & Founder</h5>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <button>Contact</button>
+      </div>
+      <div>
+        <img src="images/Jane.jpg" alt="image">
+        <h2>Jane Doe</h2>
+        <h5>Architect</h5>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <button>Contact</button>
+      </div>
+      <div>
+        <img src="images/mike.jpg" alt="image">
+        <h2>Mike Ross</h2>
+        <h5>Architect</h5>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <button>Contact</button>
+      </div>
+      <div>
+        <img src="images/Dan.jpg" alt="image">
+        <h2>Dan Star</h2>
+        <h5>Architect</h5>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <button>Contact</button>
+      </div>
+    </div>
+
+<!-- contact section--------- -->
+      <div class="contact-div">
+        <form action="#">
+          <h3>Contact</h3>
+          <hr>
+          <span>Lets get in touch and talk about your next project.</span>
+          
+          <input type="text" placeholder="Name" required>
+          <input type="text" placeholder="Email" required>
+          <input type="text" placeholder="Subject" required>
+          <input type="text" placeholder="Comment" required>
+          <button>SEND MESSAGE</button>
+        </form>
+      </div>
+
+      <center>
+        <img src="images/map.jpg" alt="">
+      </center>
+
+
+<footer>
+  <span>Powered by <u>DineshDinnu</u></span>
+</footer>
+</body>
+</html>
